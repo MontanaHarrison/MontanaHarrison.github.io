@@ -11,6 +11,7 @@
 .group {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .item {
@@ -31,15 +32,14 @@
 h1{
   letter-spacing: 0px;
   color: rgba(116, 93, 24, 0.568);
+  text-align: center;
 }
 
 /* Self-portrait */
 .me{
-  margin-top: 12px;
-  margin-right: 0px;
-  margin-left: 32px;
-  margin-bottom: 30px;
-  width: 350px;
+  display: block;
+  margin: 0 auto;
+  width: 75%;
   box-shadow: 100px 100px 100px 100px rgba(0, 0, 0, 0.164);
   filter: grayscale(60%);
   border: solid rgba(0, 0, 0, 0.089) 5px;
@@ -47,33 +47,33 @@ h1{
 
 /* Pendant image next to About Me */
 .pendant{
-  width: 412px;
+  width: 100%;
+  height: 100px;
   margin-top: 0px;
+  filter: opacity(90%) sepia(100%);
 }
 
 /* Placeholder images for projects */
 .placeholder{
-width: 320px;
+width: 80%;
 filter: sepia(25%);
 box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.377);
-margin-left: 45px;
+display: block;
+margin: 0 auto;
+margin-top: 40px;
 }
 
-/* class for h1 and h2 to allow them to be centered */
+/* class for h2 to be centered */
 .center{
   text-align: center;
   margin: 0px;
 }
 
-h1{
-  color: rgba(116, 93, 24, 0.568);
-}
 
 /* About Me section backgroung color and other style */
 .colored{
   background: rgba(116, 93, 24, 0.568);
-  height: 894px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 /* Greetings header and paragraph */
@@ -81,6 +81,7 @@ h1{
   margin-top: 25px;
   margin-left: 0px;
   margin-right: 0px;
+  margin-bottom: 25px;
 }
 
 /* Contact section background color */
@@ -91,11 +92,15 @@ h1{
 
 /* Homogenous header font */
 h1, h2, h3{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3{
+  margin-top: 30px;
 }
 
 /* Decided to center all text for smaller screens */
-p, ol, ul, h3{
+p, li, h3{
   text-align: center;
   margin: 10px;
   font-size: 16px;
@@ -103,16 +108,18 @@ p, ol, ul, h3{
 
 /* The ordered list in the the Contact section */
 .center-li{
-width: 35%;
-margin-left: 135px;
-text-align: left;
+width: 85%;
+text-align: center;
+padding: 0px;
+list-style: none;
 }
 
 /* The unordered list in the About Me Section */
 .first-li{
-width: 35%;
-margin-left: 107px;
-text-align: left;
+width: 100%;
+text-align: center;
+list-style: none;
+padding-left: 0px;
 }
 
 p, li{
@@ -125,7 +132,7 @@ footer{
   color: rgb(255, 255, 255);
   margin: 0px;
   padding-top: 15px;
-  height:65px;
+  height:85px;
 }
 
 /* Gave a seperate class to the text inside of footer, so I could style it independently */
@@ -145,6 +152,7 @@ a:active {color: rgb(209, 147, 88); }
 header nav{
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 header nav ul{
@@ -155,7 +163,7 @@ header nav ul{
 
 header nav ul li a{
   text-decoration: none;
-  margin: 0 25px 0 0;
+  margin: 0 15px 0 0;
   letter-spacing: -1px;
 }
 
@@ -191,6 +199,7 @@ form textarea{
 @media all and (min-width: 800px) {
   .group {
     flex-direction: row;
+    align-items: center;
   }
 
 
@@ -214,35 +223,36 @@ h1{
   margin-top: 9px;
   margin-right: 0px;
   margin-bottom: 50px;
-  width: 450px;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
   box-shadow: 100px 100px 100px 100px rgba(0, 0, 0, 0.164);
   filter: grayscale(60%);
   border: solid rgba(0, 0, 0, 0.089) 5px;
   }
 
-p, ol, ul, h3{
-  text-align: left;
+p, h3{
+  text-align: center;
   margin-left: 5px;
   font-size: 16px;
   }
 
 .greetings{
   margin-top: 50px;
-  margin-left: 325px;
-  margin-right: 325px;
   }
 
 .colored{
   background: rgba(116, 93, 24, 0.568);
-  height: 418px;
-  margin-bottom: 50px;
-  margin-right: 130px;
+  margin-bottom: 0px;
+  padding: 0 200px 0 200px;
   }
 
 .pendant{
-  margin-left: 261px;
-  width: 418px;
-  box-shadow: 100px 0 100px 0 rgba(116, 93, 24, 0.568) ; 
+  width: 100%; 
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+  filter: opacity(90%) sepia(100%);
   }
 
 .what{
@@ -254,9 +264,8 @@ p, ol, ul, h3{
   }
 
 .center-li{
-  width: 35%;
-  margin-left: 300px;
-  text-align: left;
+  width: 93%;
+  text-align: center;
   }
 
 header nav ul li a{
