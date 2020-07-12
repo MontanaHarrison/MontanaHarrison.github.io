@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 	<meta charset="utf-8">
@@ -13,156 +13,72 @@
 <!-- Will be including the header, main, and footer in the body -->
 
   <body>
-	  <header>
-		  <img id="home" class="banner" src="img/mountains.jpg" alt="Mountains and a forest">
+	<header>
+		<img class="banner" src="img/mountains.jpg">
     <!-- CSS only allowed me to space the lettering to a limited extent, which is why I physically did it myself, as well as styled it -->
-		  <h1>
-			Montana J.Harrison
-		  </h1>
-		  <h2 class="center">
+		<h1 class="center">
+			M o n t a n a  <i>J.</i> H a r r i s o n
+		</h1>
+		<h2 class="center">
 			Web Developer
-	  	</h2>
-      <nav>
-    <ul id="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  	</header>
-
-
+		</h2>
+    <!-- Was thinking about putting a nav here... Perhaps later -->
+	</header>
   <!-- Main contains intro, about, and contact -->
 	<main>
-    <section class="greetings">
-      <div class="group">
-        <div class="item">
-		      <img class="me" src="img/me.jpg" alt="A portrait of myself"/>
-        </div>
-        <div class="item">
-          <h3>
-          Greetings Y'all!
-          </h3>
-          <p>
-          I'm a web developer hailing from the lands of San Antonio, Texas.
-          </p>
+		<img class="me" src="img/me.jpg" />
+      <h3>
+        Greetings y'all!
+      </h3>
+      <p>
+        I'm a web developer hailing from the lands of San Antonio, Texas.
+      </p>
       <!-- Will be including link to Thinkful.com for convinience -->
-          <p>
-          After working years at a local car wash as a manager, I decided one day I needed a change of pace and atmosphere. A serendipitous occurrence took place in my life that led me to web development. Since then, I've graduated from <a href="https://www.thinkful.com/" target="\_blank">Thinkful</a>, an online coding bootcamp, and have been working on projects at every opportunity. My life's never been better. 
-          </p>
-        </div>
-      </div>
-    </section>
+      <p>
+        After working years at a local car wash as a manager, I decided one day I needed a change of pace and atmosphere. A serendepitous occurance took place in my life that led me to web development. Since then, I've graduated from <a href="https://www.thinkful.com/" target="\_blank">Thinkful</a>, an online coding bootcamp, and have been working on projects at every oppurtunity. My life's never been better. 
+      </p>
 
+      <hr>
 
-    <div class="group colored" id="about">
-      <div class="item">
-        <h3 class="right">
+      <img class="thor" src="img/thor.jpg">
+      <img class="thor2" src="img/thor.jpg">
+
+      <h3>
         About Me 
-        </h3>
-        <p class="right">
+      </h3>
+      <p>
         There's a couple different hobbies in my life that help contribute to the skill and interest I have in this field.
-        </p>
-        <ul class="first-li">
-            <li><b>Fitness / Health</b></li>
-            <li><b>Music / Art</b></li>
-        </ul>
-        <p class="right">
+      </p>
+      <ul>
+        <li>Fitness / Health</li>
+        <li>Music / Art</li>
+      </ul>
+      <p>
         Let me explain:
-        </p>
-        <p class="right">
+      </p>
+      <p>
         My passion for fitness has allowed me to build discipline and grit throughout the last few years of my life. Web development also requires both of those values including patience and fortitude. 
-        </p>
-        <p class="right">  
-        I come from a family with a strong love for the arts. Unsurprisingly, this love has crossed over into my life, as well. I believe having a creative spirit and an artistic motivation can assist anyone in this field. There is much joy in creative expression, as well as seeing a finished product come to fruition.
-        </p>
-        <p class="right">
+      </p>
+      <p>  
+        I come from a family with a strong love for the arts. Unsuprisingly, this love has crossed over into my life, as well. I believe having a creative spirit and an artistic motivation can assist anyone in this field. There is much joy in creative expression, as well as seeing a finished product come to fruition.
+      </p>
+      <p>
         Finally, my experience in customer service and management has forced me to reckon with the reality of social interaction. It's extremely important. I enjoy connecting with well-rounded fellow developers, and my interpersonal skills make me solid team member across the board.
-        </p>
-      </div>
-      </div>
-        <div class="item">
-          <img class="pendant" src="img/mid.jpg">
-        </div>
+      </p>
 
-    <!-- NEWEST Edition (Portfolio) -->
-    <div class="group" id="portfolio">
-      <div class="item">
-        <h3 class="what">
-        What I've Done and What I Can Do
-        </h3>
-        <p class="what">
-        Throughout my career as a full-stack developer I've acquired a broad range of skills. I'm proficient in HTML, CSS, and Javascript, including several frameworks such as ReactJS and Node.js. I also am well-acquianted with Python, Ruby, and PHP.
-        </p>
-        <p class="what">
-        Here are a couple of projects that I'm most proud of:
-        </p>
-      </div>
-      <div class="item">
-          <img src="img/tree.jpg" alt="Yggdrasil" class="placeholder">
-        <h3>
-        Yggdrasil: Interactive Map
-        </h3>
-        <p>
-        My fascination with Norse paganism has inspired me to create a stylized interactive map of the Nine Worlds. This website and mobile app is designed to be entrancing and educational. Check it out <a href=""> here.</a>
-        </p>
-        <p>
-          Tools used: <b>Javascript, Node.js, JQuery</b>
-        </p>
-      </div>
-      <div class="item">
-          <img src="img/warrior.png" alt="A Warrior" class="placeholder">
-        <h3>
-        Wordsmith Adventure
-        </h3>
-        <p>
-        This project was envisioned from the love I have for RPGs. Wordsmith Adventure is not only an RPG, but a typing game for all ages. As you adventure through a vast fantasy experience and level up your character, your typing skills will increase in real life, as well. Check it out <a href=""> here.</a>
-        </p>
-        <p>
-          Tools used: <b>Javascript, React, Ruby</b>
-        </p>
-      </div>
-    </div>
+      <hr>
 
-      
-
-    <section class="contact" id="contact">
-      <div class="group">
-        <div class="item">
-        <h3>
+      <h3>
         Contact
-        </h3>
-        <p>
+      </h3>
+      <p>
         Please, feel free to contact or follow me.
-        </p>
+      </p>
       <!--Links to github and linkedin-->
-        <ol>
-          <div class="center-li">
-            <li><a href="https://github.com/MontanaHarrison" target="\_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/montana-harrison-3a18741aa/" target="\_blank">LinkedIn</a></li>
-            <li><a href="mailto: harrison.tana@yahoo.com">Email</a></li>
-          </div>
-        </ol>
-        </div>
-        <div class="item">
-          <h2 class="center">
-            Contact Form
-          </h2>
-            <form action="#" method="POST">
-            <label for="user-name">Name:</label>
-            <input id="user-name" type="text" name="name">
-            <br>
-            <label for="user-email">Email:</label>
-            <input id="user-email" type="text" name="email">
-            <br>
-            <label for="user-message">Message:</label>
-            <textarea id="user-message" name="message"></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </section>
-    
+      <ol>
+        <li><a href="https://github.com/MontanaHarrison" target="\_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/montana-harrison-3a18741aa/" target="\_blank">LinkedIn</a></li>
+      </ol>
 
   </main>
     <!--Footer will include a quote for effect-->
