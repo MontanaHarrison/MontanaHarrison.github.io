@@ -102,14 +102,12 @@ h3{
 /* Decided to center all text for smaller screens */
 p, li, h3{
   text-align: center;
-  margin: 10px;
   font-size: 16px;
 }
 
 /* The ordered list in the the Contact section */
 .center-li{
-width: 85%;
-text-align: center;
+width: 100%;
 padding: 0px;
 list-style: none;
 }
@@ -117,7 +115,6 @@ list-style: none;
 /* The unordered list in the About Me Section */
 .first-li{
 width: 100%;
-text-align: center;
 list-style: none;
 padding-left: 0px;
 }
@@ -264,7 +261,7 @@ p, h3{
   }
 
 .center-li{
-  width: 93%;
+  width: 100%;
   text-align: center;
   }
 
